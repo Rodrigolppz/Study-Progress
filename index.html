@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Certificados</title>
+    <title>Galeria de Certificados</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,89 +14,43 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            padding: 20px;
-            text-align: center;
+            flex-direction: column;
         }
         h1 {
             font-size: 2.5em;
             color: #333;
             margin-bottom: 40px;
         }
-        .cards {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
+            width: 80%;
         }
-        .card {
-            background-color: #fff;
+        .gallery img {
+            width: 100%;
+            height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
             transition: transform 0.3s;
         }
-        .card:hover {
+        .gallery img:hover {
             transform: scale(1.05);
-        }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .card-body {
-            padding: 20px;
-        }
-        .card-title {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .card-description {
-            font-size: 1em;
-            color: #666;
-            margin-bottom: 15px;
-        }
-        .card a {
-            font-size: 1em;
-            color: #fff;
-            background-color: #007bff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .card a:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Meus Certificados</h1>
-        <div class="cards">
-            <!-- Certificado 1 -->
-            <div class="card">
-                <img src="https://github.com/Rodrigolppz/Study-Progress/blob/main/Certificates/Linux%20completo%20%2B%20servidores%20-%2016.5h.jpg" alt="Certificado 1">
-                <div class="card-body">
-                    <h2 class="card-title">Certificado de Análise de Dados</h2>
-                    <p class="card-description">Curso sobre as principais ferramentas de análise de dados, incluindo SQL, Power BI e Python.</p>
-                    <a href="https://ww.github.com/rodrigolppz/Study-Progress/Certificates" target="_blank">Ver no GitHub</a>
-                </div>
-            </div>
-            <!-- Certificado 2 -->
-            <div class="card">
-                <img src="certificado2.jpg" alt="Certificado 2">
-                <div class="card-body">
-                    <h2 class="card-title">Certificado de Power BI</h2>
-                    <p class="card-description">Curso focado na criação de dashboards interativos e visualizações de dados no Power BI.</p>
-                    <a href="https://www.github.com/seuusuario/certificado2" target="_blank">Ver no GitHub</a>
-                </div>
-            </div>
-            <!-- Adicione mais certificados aqui -->
-        </div>
+    <h1>Galeria de Certificados</h1>
+    <div class="gallery">
+        <!-- Certificado 1 -->
+        <img src="https://raw.githubusercontent.com/Rodrigolppz/Study-Progress/main/Certificates/Linux%20completo%20%2B%20servidores%20-%2016.5h.jpg" alt="Certificado 1">
+        <!-- Certificado 2 -->
+        <img src="imagens/certificado2.jpg" alt="Certificado 2">
+        <!-- Certificado 3 -->
+        <img src="imagens/certificado3.jpg" alt="Certificado 3">
+        <!-- Certificado 4 -->
+        <img src="imagens/certificado4.jpg" alt="Certificado 4">
+        <!-- Adicione mais certificados aqui -->
     </div>
 </body>
 </html>
