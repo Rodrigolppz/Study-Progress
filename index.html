@@ -1,19 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Meus Certificados</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; text-align: center; }
-        img { max-width: 90%; margin: 10px auto; display: block; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .certificate-card {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .certificate-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #4CAF50;
+        }
+
+        .certificate-card h2 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .certificate-card p {
+            margin: 0 1rem 1rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            color: #666;
+        }
     </style>
 </head>
 <body>
-    <h1>Portfólio de Certificados</h1>
-    <p>Bem-vindo! Aqui estão os certificados que conquistei ao longo da minha jornada.</p>
-    <div>
-        <img src="certificado1.jpg" alt="Certificado 1">
-        <img src="certificado2.jpg" alt="Certificado 2">
-        <!-- Adicione mais imagens ou PDFs aqui -->
-    </div>
+    <header>
+        <h1>My Certificates Portfolio</h1>
+    </header>
+    <main>
+        <section class="certificates">
+            <!-- Certificate 1 -->
+            <div class="certificate-card">
+                <img src="certificates/certificate1.png" alt="Certificate 1">
+                <h2>Python for Data Science</h2>
+                <p>Issued by: Udemy</p>
+            </div>
+            <!-- Certificate 2 -->
+            <div class="certificate-card">
+                <img src="certificates/certificate2.jpg" alt="Certificate 2">
+                <h2>Excel Advanced</h2>
+                <p>Issued by: Coursera</p>
+            </div>
+            <!-- Add more certificates here -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Rodrigo's Portfolio. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
